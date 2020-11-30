@@ -1,4 +1,4 @@
-<!-- # Awwards
+# Awwards
 
 ## Description
 this is a web app where it allows a user to post a project he/she has created and get it reviewed by his/her peers.
@@ -119,5 +119,5 @@ There are no known bugs at the moment
 * Create a pull request
 
 ## Contacts
-> Send me an [email](bihawam271@gmail.com) to collaborate on the project. -->
+> Send me an [email](bihawam271@gmail.com) to collaborate on the project.
 
