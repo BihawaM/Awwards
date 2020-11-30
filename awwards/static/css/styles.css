@@ -1,4 +1,4 @@
-/* {% extends 'base.html' %}
+{% extends 'base.html' %}
 {% load bootstrap4 %}
 {% block content %}
 <div class="container-fluid">
@@ -27,4 +27,4 @@
     </div>
 </div>
 {{form.media}}
-{% endblock %} */
+{% endblock %}
