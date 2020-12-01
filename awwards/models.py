@@ -9,7 +9,7 @@ import datetime as dt
 # Create your models here.
 class Profile(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
-    # profile_photo = cloudinary.models.CloudinaryField('profiles/', blank=True)
+    profile_photo = cloudinary.models.CloudinaryField('profiles/', blank=True)
     bio = models.CharField(max_length=255)
     contact = models.CharField(max_length=255)
     
