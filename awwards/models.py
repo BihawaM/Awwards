@@ -3,11 +3,13 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 import datetime as dt
+# import cloudinary
+# from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Profile(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
-    profile_photo = models.ImageField(upload_to='profiles/')
+    # profile_photo = cloudinary.models.CloudinaryField('profiles/', blank=True)
     bio = models.CharField(max_length=255)
     contact = models.CharField(max_length=255)
     
@@ -21,7 +23,7 @@ class Profile(models.Model):
         
 class Project(models.Model):
     title = models.CharField(max_length=150)
-    home = models.ImageField(upload_to='photos')
+    home = cloudinary.models.CloudinaryField('photos', blank=True)
     description = models.CharField(max_length=255)
     live_link = models.URLField(max_length=250)
     design = models.IntegerField(blank=True,default=0)

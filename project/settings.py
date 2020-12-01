@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 import django_heroku
-import cloudinary.uploader
-import cloudinary.api
 import cloudinary
 import dj_database_url
 from pathlib import Path
@@ -37,6 +35,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
+    'cloudinary',
     'bootstrap4',
     'crispy_forms',
     'rest_framework',
